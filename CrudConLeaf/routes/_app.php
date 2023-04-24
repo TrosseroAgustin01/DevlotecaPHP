@@ -4,9 +4,9 @@ app()->get('/', function () {
     response()->page(viewsPath('index.html', false));
 });
 
-app()->get('/contacto','ContactosController@index');
+app()->get('/contactos','ContactosController@index');
 
-app()->get('/audio','ContactosController@prueba');
+#app()->get('/audio','ContactosController@prueba');
 
 app()->get('/home', 'TestsController@index');
 

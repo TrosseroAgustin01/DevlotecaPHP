@@ -4,16 +4,17 @@ namespace Controllers;
 
 use Models\Contactos;
 
-class ContactosController extends Controller
-{
+class ContactosController extends Controller {
     public function index(){
-        
-        $data = Contactos::all();
 
-        response()->json(["message" =>"Ejecucion Exitosa","data"=>$data]);
-    
+        echo 'estoy funcionando'."<br/>";
+
+        response()->json(Contactos::all());
     }
-    public function prueba()
+}
+
+/* 
+        public function prueba()
     {
         $audio = "<button class='reproductor'>Radio Check</button>
         <audio src=''></audio>
@@ -31,7 +32,4 @@ class ContactosController extends Controller
 
         echo $audio;
     }
-
-}
-
-?>
+ */
