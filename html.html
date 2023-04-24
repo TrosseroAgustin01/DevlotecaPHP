@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--  <audio id="m" src="/opt/lampp/htdocs/Devloteca/audio/check.mp3" controls=""></audio>
+                    <br>
+                    <button onclick="document.getElementById('m').play()">Play</button> -->
+                    <button class="reproductor">Reproduce tu audio</button>
+                    <audio src=""></audio>
+                    <script>
+                        let boton = document.querySelector(".reproductor")
+                        let audioEtiqueta = document.querySelector("audio")
+                    
+                        boton.addEventListener("click", () => {
+                          audioEtiqueta.setAttribute("src", "/Devloteca/audio/check.mp3")
+                          audioEtiqueta.play()
+                          console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+                        })
+                    </script>
+                    
+        
+</body>
+</html>

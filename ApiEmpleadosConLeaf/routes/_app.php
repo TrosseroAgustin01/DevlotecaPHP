@@ -14,6 +14,8 @@ app()->delete('/contactos/{id}', 'ContactosController@deleteContact');
 
 app()->put("/contactos/{id}", 'ContactosController@updateContact');
 
+app()->get('/users',"UsersController@index");
+
 /*app()->get('/home', 'TestsController@index');
 
 app()->get('/test', 'TestsController@test');*/
